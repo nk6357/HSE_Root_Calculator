@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE বর্গমূল ক্যালকুলেটর</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="siteheader">
+    <nav class="glavcalc">
+        <a href="./index7.html">প্রধান পাতা</a>
+        <a href="./calc7.html">ক্যালকুলেটর</a>
+    </nav>
+</header>
+
+<div class="calculator">
+
+    <h1>HSE বর্গমূল ক্যালকুলেটর</h1>
+
+    <div class="name-output">
+        ডেটা দেওয়ার আগে
+        <a href="./index7.html#input-rules">ইনপুটের নিয়ম পড়ুন।</a>
+    </div>
+
+    <div class="subtitle">
+        মূলের ভেতরের সংখ্যা লিখুন
+    </div>
+
+    <div class="root">
+        <span class="root-number">2</span>
+        <span class="root-symbol">√</span>
+        <input id="inroot" type="text" class="root-input">
+    </div>
+
+    <div class="parameters">
+
+        <div class="parameter accuracy">
+            <div class="parameter-title">
+                দশমিকের পরে অঙ্কের সংখ্যা
+            </div>
+            <div class="accuracy-input">
+                <input id="accuracy" type="number" min="0" max="512" value="0">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" id="Calculate">হিসাব করুন</button>
+
+    <div class="name-output">
+        বর্গমূলের ফলাফল:
+    </div>
+
+    <output id="numeric-result" class="result"></output>
+
+    <div class="name-output">
+        বিশ্লেষণধর্মী আকারে বর্গমূলের ফলাফল:
+    </div>
+
+    <output id="analytic-result" class="result2"></output>
+</div>
+<script src="script.js"></script>
+</body>

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE 平方根计算器</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="siteheader">
+    <nav class="glavcalc">
+        <a href="./index2.html">主页</a>
+        <a href="./calc2.html">计算器</a>
+    </nav>
+</header>
+
+<div class="calculator">
+
+    <h1>HSE 平方根计算器</h1>
+
+    <div class="name-output">
+        输入数据前，请阅读
+        <a href="./index2.html#input-rules">输入规则。</a>
+    </div>
+
+    <div class="subtitle">
+        请输入被开方数
+    </div>
+
+    <div class="root">
+        <span class="root-number">2</span>
+        <span class="root-symbol">√</span>
+        <input id="inroot" type="text" class="root-input">
+    </div>
+
+    <div class="parameters">
+
+        <div class="parameter accuracy">
+            <div class="parameter-title">
+                小数点后位数
+            </div>
+            <div class="accuracy-input">
+                <input id="accuracy" type="number" min="0" max="512" value="0">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" id="Calculate">计算</button>
+
+    <div class="name-output">
+        平方根结果：
+    </div>
+
+    <output id="numeric-result" class="result"></output>
+
+    <div class="name-output">
+        平方根的解析形式：
+    </div>
+
+    <output id="analytic-result" class="result2"></output>
+</div>
+<script src="script.js"></script>
+</body>

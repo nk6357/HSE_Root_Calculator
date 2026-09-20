@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de raízes quadradas HSE</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="siteheader">
+    <nav class="glavcalc">
+        <a href="./index8.html">Início</a>
+        <a href="./calc8.html">Calculadora</a>
+    </nav>
+</header>
+
+<div class="calculator">
+
+    <h1>Calculadora de raízes quadradas HSE</h1>
+
+    <div class="name-output">
+        Antes de inserir os dados, consulte as
+        <a href="./index8.html#input-rules">regras de introdução.</a>
+    </div>
+
+    <div class="subtitle">
+        Digite o radicando
+    </div>
+
+    <div class="root">
+        <span class="root-number">2</span>
+        <span class="root-symbol">√</span>
+        <input id="inroot" type="text" class="root-input">
+    </div>
+
+    <div class="parameters">
+
+        <div class="parameter accuracy">
+            <div class="parameter-title">
+                Número de casas decimais
+            </div>
+            <div class="accuracy-input">
+                <input id="accuracy" type="number" min="0" max="512" value="0">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" id="Calculate">Calcular</button>
+
+    <div class="name-output">
+        Resultado da raiz:
+    </div>
+
+    <output id="numeric-result" class="result"></output>
+
+    <div class="name-output">
+        Resultado da raiz na forma analítica:
+    </div>
+
+    <output id="analytic-result" class="result2"></output>
+</div>
+<script src="script.js"></script>
+</body>

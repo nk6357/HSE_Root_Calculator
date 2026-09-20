@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE Калькулятор корней</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="siteheader">
+    <nav class="glavcalc">
+        <a href="./index.html">Главная</a>
+        <a href="./calc.html">Калькулятор</a>
+    </nav>
+</header>
+
+<div class="calculator">
+
+    <h1>HSE Калькулятор корней</h1>
+
+    <div class="name-output">
+        Перед вводом данных ознакомьтесь с 
+        <a href="./index.html#input-rules">правилами ввода.</a>
+    </div>
+
+    <div class="subtitle">
+        Введите подкоренное число
+    </div>
+
+    <div class="root">
+        <span class="root-number">2</span>
+        <span class="root-symbol">√</span>
+        <input id="inroot" type="text" class="root-input">
+    </div>
+
+    <div class="parameters">
+
+
+        <div class="parameter accuracy">
+            <div class="parameter-title">
+                Количество знаков после запятой
+            </div>
+            <div class="accuracy-input">
+                <input id="accuracy" type="number" min="0" max="512" value="0">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" id="Calculate">Вычислить</button>
+
+    <div class="name-output">
+        Вывод корня:
+    </div>
+
+    <output id="numeric-result" class="result"></output>
+
+    <div class="name-output">
+        Вывод корня в аналитической форме:
+    </div>
+
+    <output id="analytic-result" class="result2"></output>
+</div>
+<script src="script.js"></script>
+</body>

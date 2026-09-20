@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HSE वर्गमूल कैलकुलेटर</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="siteheader">
+    <nav class="glavcalc">
+        <a href="./index3.html">मुखपृष्ठ</a>
+        <a href="./calc3.html">कैलकुलेटर</a>
+    </nav>
+</header>
+
+<div class="calculator">
+
+    <h1>HSE वर्गमूल कैलकुलेटर</h1>
+
+    <div class="name-output">
+        डेटा दर्ज करने से पहले
+        <a href="./index3.html#input-rules">इनपुट नियम पढ़ें।</a>
+    </div>
+
+    <div class="subtitle">
+        वर्गमूल के अंदर की संख्या दर्ज करें
+    </div>
+
+    <div class="root">
+        <span class="root-number">2</span>
+        <span class="root-symbol">√</span>
+        <input id="inroot" type="text" class="root-input">
+    </div>
+
+    <div class="parameters">
+
+        <div class="parameter accuracy">
+            <div class="parameter-title">
+                दशमलव के बाद अंकों की संख्या
+            </div>
+            <div class="accuracy-input">
+                <input id="accuracy" type="number" min="0" max="512" value="0">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" id="Calculate">गणना करें</button>
+
+    <div class="name-output">
+        वर्गमूल का परिणाम:
+    </div>
+
+    <output id="numeric-result" class="result"></output>
+
+    <div class="name-output">
+        वर्गमूल का विश्लेषणात्मक रूप:
+    </div>
+
+    <output id="analytic-result" class="result2"></output>
+</div>
+<script src="script.js"></script>
+</body>

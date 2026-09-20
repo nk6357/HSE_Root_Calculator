@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculateur de racines carrées HSE</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+
+<header class="siteheader">
+    <nav class="glavcalc">
+        <a href="./index5.html">Accueil</a>
+        <a href="./calc5.html">Calculateur</a>
+    </nav>
+</header>
+
+<div class="calculator">
+
+    <h1>Calculateur de racines carrées HSE</h1>
+
+    <div class="name-output">
+        Avant de saisir des données, consultez les
+        <a href="./index5.html#input-rules">règles de saisie.</a>
+    </div>
+
+    <div class="subtitle">
+        Saisissez le radicand
+    </div>
+
+    <div class="root">
+        <span class="root-number">2</span>
+        <span class="root-symbol">√</span>
+        <input id="inroot" type="text" class="root-input">
+    </div>
+
+    <div class="parameters">
+
+        <div class="parameter accuracy">
+            <div class="parameter-title">
+                Nombre de chiffres après la virgule
+            </div>
+            <div class="accuracy-input">
+                <input id="accuracy" type="number" min="0" max="512" value="0">
+            </div>
+        </div>
+
+    </div>
+
+    <button type="button" id="Calculate">Calculer</button>
+
+    <div class="name-output">
+        Résultat de la racine :
+    </div>
+
+    <output id="numeric-result" class="result"></output>
+
+    <div class="name-output">
+        Résultat de la racine sous forme analytique :
+    </div>
+
+    <output id="analytic-result" class="result2"></output>
+</div>
+<script src="script.js"></script>
+</body>
